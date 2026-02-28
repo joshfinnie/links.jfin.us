@@ -11,6 +11,12 @@ export const personalLinks = [
   { label: 'josh@jfin.us', url: 'mailto:josh@jfin.us', icon: 'mingcute:mail-line' },
 ];
 
+export const projects = [
+  { label: 'picskyapp.com', url: 'https://picskyapp.com', icon: 'mingcute:rocket-line' },
+  { label: 'tikicompass.com', url: 'https://tikicompass.com', icon: 'mingcute:compass-line' },
+  { label: 'bluefin.games', url: 'https://bluefin.games', icon: 'mingcute:game-2-line' },
+];
+
 export const bio = {
   name: "Josh Finnie",
   description: "Senior engineer building things with code",

@@ -3,7 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import LinkCard from '../components/LinkCard.astro';
 import SocialLink from '../components/SocialLink.astro';
-import { socials, personalLinks, bio } from '../data/links';
+import { socials, personalLinks, projects, bio } from '../data/links';
 
 ---
 
@@ -36,6 +36,20 @@ import { socials, personalLinks, bio } from '../data/links';
             label={link.label}
             icon={link.icon}
         />
+        ))}
+
+        <div class="flex items-center gap-3 py-2">
+          <div class="flex-1 h-px bg-gray-700/50"></div>
+          <span class="text-gray-500 text-xs uppercase tracking-widest">Projects</span>
+          <div class="flex-1 h-px bg-gray-700/50"></div>
+        </div>
+
+        {projects.map((project) => (
+          <LinkCard
+            href={project.url}
+            label={project.label}
+            icon={project.icon}
+          />
         ))}
       </div>
 
